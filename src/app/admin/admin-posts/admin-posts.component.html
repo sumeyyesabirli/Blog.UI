@@ -1,0 +1,22 @@
+<div class="container">
+  <br>
+  <h1>Bütün Blog Yazıları  </h1>
+  <br>
+  <h4 *ngIf="!posts">Data yok</h4>
+  <table class="table" *ngIf="posts">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of posts">
+        <td>{{post.title}}</td>
+        <td>
+          <a [routerLink]="['/admin/posts',post.id]">View</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
