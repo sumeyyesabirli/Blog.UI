@@ -1,0 +1,12 @@
+<div class="container" *ngIf="post">
+  <div class="card" style="max-width: 500px;margin: 0 auto">
+    <img [src]="post.featuredImageUrl" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h2 class="card-title">{{post.title}}</h2>
+      <br>
+      <article class="card-text">{{post.summary}}</article>
+      <br>
+      <a class="btn btn-primary"[routerLink]="['/post',post.id]">Daha Fazlası</a>
+    </div>
+  </div>
+</div>

@@ -9,6 +9,7 @@ import { AdminViewPostComponent } from './admin/admin-view-post/admin-view-post.
 import { FormsModule } from '@angular/forms';
 import { AdminAddPostComponent } from './admin/admin-add-post/admin-add-post.component';
 import { PostsComponent } from './posts/posts.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PostsComponent } from './posts/posts.component';
     AdminPostsComponent,
     AdminViewPostComponent,
     AdminAddPostComponent,
-    PostsComponent
+    PostsComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
