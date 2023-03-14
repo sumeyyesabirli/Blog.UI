@@ -1,9 +1,9 @@
 export interface AddPostRequest  {
   title: string | undefined;
-  content: string | undefined;
-  summary: string | undefined;
+  context: string | undefined;
+  sunmary: string | undefined;
   urlHandle: string | undefined;
-  aothor: string | undefined;
+  author: string | undefined;
   visible: boolean | undefined;
   publishDate: string | undefined;
   updatedDate: string | undefined;

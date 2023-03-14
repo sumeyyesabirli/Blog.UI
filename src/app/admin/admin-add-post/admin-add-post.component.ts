@@ -8,30 +8,26 @@ import { PostService } from 'src/app/services/post.service';
   templateUrl: './admin-add-post.component.html',
   styleUrls: ['./admin-add-post.component.css']
 })
-export class AdminAddPostComponent implements OnInit {
+export class AdminAddPostComponent {
 
   constructor(private postService: PostService){  }
 
   post: AddPostRequest = {
-    aothor: '',
-    content: '',
+    author: '',
+    context: '',
     featuredImageUrl:'',
     publishDate:'',
-    summary:'',
+    sunmary:'',
     title:'',
     updatedDate:'',
     urlHandle:'',
     visible: true,
-
-  }
-
-  ngOnInit(): void {
-
   }
 
   onSubmit(): void {
     this.postService.addPost(this.post).subscribe(
       response =>{
+        console.log(response)
         alert('Oluşturuldu');
       }
     );

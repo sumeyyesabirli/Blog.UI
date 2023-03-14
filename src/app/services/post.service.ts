@@ -16,7 +16,7 @@ export class PostService {
   apiBaseUrl = environment.apiBaseUrl;
 
   getAllPosts(): Observable<Post[]>{
-    return this.http.get<Post[]>(this.apiBaseUrl + '/api/post/');
+    return this.http.get<Post[]>(this.apiBaseUrl + '/api/posts/');
   }
 
   getPostById(id:string):Observable<Post>{
